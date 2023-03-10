@@ -3,7 +3,6 @@
 /files
 /migration
 /node_modules
-Makefile
 
 # Logs
 logs
