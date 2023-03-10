@@ -2,6 +2,7 @@ CONNECTION_STRING = mongodb+srv://ngominhdai92tn:Huynhnhu97@cluster0.ga1sb.mongo
 
 setup:
 	sudo npm install -g @nestjs/cli
+	brew install mongodb/brew/mongodb-database-tools
 	npm init --yes
 	npm install
 	make init_data
