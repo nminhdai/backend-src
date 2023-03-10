@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "27a95f6b-16e4-40bc-9e6a-de2fc4bf46b2",
+		"name": "Raksul Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22581558"
+	},
+	"item": [
+		{
+			"name": "smartphone",
+			"item": [
+				{
+					"name": "create product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"model\": \"iPhone X\",\n    \"dataMem\": \"4GB\",\n    \"yearManufacture\": 2020,\n    \"osVersion\": \"ios 16.1\",\n    \"bodyColor\": \"purple\",\n    \"price\": 13000000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/smartphone/create",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"smartphone",
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "localhost:3000",
+			"type": "string"
+		}
+	]
+}
